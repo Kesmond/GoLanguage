@@ -6,21 +6,23 @@ import (
 )
 
 func main() {
+	//fmt.Println("Go Language Environment is working!")
 
 	//Handles concurrency
-	go display("Hello, Goroutine!")
-	display("Hello, Main!")
+	/*
+			go display("Hello, Goroutine!")
+		display("Hello, Main!")
 
-	go func(s string) {
-		for i := 0; i < 3; i++ {
-			fmt.Println(s, i)
-			time.Sleep(500 * time.Millisecond)
-		}
-	}("Hello from Anonymous Gourutine!")
+		go func(s string) {
+			for i := 0; i < 3; i++ {
+				fmt.Println(s, i)
+				time.Sleep(500 * time.Millisecond)
+			}
+		}("Hello from Anonymous Gourutine!")
 
-	time.Sleep(2 * time.Second)
-	fmt.Println("Main function complete.")
-
+		time.Sleep(2 * time.Second)
+		fmt.Println("Main function complete.")
+	*/
 	//Executes methodOverloading.go
 	methodMain()
 }
