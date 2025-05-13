@@ -1,19 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
-func sumTwoInt(x, y int) int {
+func sumTwo(x, y int) int {
 	return x + y
 }
 
-func sumThreeInt(x, y, z int) int {
+func sumThree(x, y, z int) int {
 	return x + y + z
 }
 
-func methodMain() {
-	x := 10
-	y := 10
-	z := 10
-	fmt.Println("Two Integers: ", sumTwoInt(x,y))
-	fmt.Println("Three Integers: ", sumThreeInt(x,y,z))
+func methodOverloadMain() {
+	a := 10
+	b := 10
+	c := 10
+	fmt.Printf("a = %v\nb = %v\nc = %v\n", a, b, c)
+	fmt.Println("Go doesn't support overloading. Must use different function name!\n")
+	time.Sleep(2 * time.Second)
+	fmt.Println("Sum of a and b: sumTwo(a,b):", sumTwo(a, b))
+	fmt.Println("Sum of a, b, c: sumThree(a,b,c):", sumThree(a, b, c))
 }
