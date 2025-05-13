@@ -2,6 +2,8 @@ package main
 
 /*
 
+//IGNORE THIS FILE, IT IS USED TO CREATE PART A
+
 var name string //Starts with a letter
 var _name string //Starts with underscore
 var 1name string //Can't start with a digit

@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Main function, where everything starts as soon as the program runs
 func main() {
 	//Declare choice as int, to take input
 	var choice int
