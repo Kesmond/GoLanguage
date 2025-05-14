@@ -14,7 +14,7 @@ func typeConversionMain() {
 
 	//Print the explanation of the bad aspect
 	fmt.Println("Go doesn't support implicit type conversion!")
-	fmt.Println("When adding the two, a must be float")
+	fmt.Println("When adding the two, a must be float OR b must be int")
 	fmt.Println("")
 	//Operations can't be done on different variables
 	//Changing a to float and add with b, store it in 'sum' variable
