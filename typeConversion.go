@@ -18,6 +18,8 @@ func typeConversionMain() {
 	fmt.Println("")
 	//Operations can't be done on different variables
 	//Changing a to float and add with b, store it in 'sum' variable
-	sum := float32(a) + b
-	fmt.Println("a + b = ", sum) //Print the sum value
+	floatSum := float32(a) + b
+	intSum := a + int(b)
+	fmt.Println("Int data type of sum = ", intSum)     //Print the sum value
+	fmt.Println("Float data type of sum = ", floatSum) //Print the sum value
 }

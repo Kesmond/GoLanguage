@@ -1,7 +1,4 @@
-package main
-
 /*
-
 //IGNORE THIS FILE, IT IS USED TO CREATE PART A
 
 var name string //Starts with a letter
@@ -21,6 +18,7 @@ var camelCase string //Each word starts with a capital letter, except the first 
 var snake_case string //Each word is connected with an underscore (_) character
 
 // Basic assignment ':='
+
 	x := 10 //Declares and assigns variable x
 
 	// Basic assignment '='
@@ -47,25 +45,28 @@ var snake_case string //Each word is connected with an underscore (_) character
 // Return multiple values function
 // It is usually used for errors
 // The function below checks if the number given is dividable
-func divide(a, b float64) (float64, error) {
-	//Receives two numbers 'a' and 'b'
-	//Returns a data type float and error message
-	if b == 0 { //If b is 0
-		//Any numbers can't be divided by zero
-		return 0, errors.New("division by zero") //Returns value 0 with error message
+
+	func divide(a, b float64) (float64, error) {
+		//Receives two numbers 'a' and 'b'
+		//Returns a data type float and error message
+		if b == 0 { //If b is 0
+			//Any numbers can't be divided by zero
+			return 0, errors.New("division by zero") //Returns value 0 with error message
+		}
+		//If b is not 0
+		return a / b, nil //Returns the value of division with no errors
 	}
-	//If b is not 0
-	return a / b, nil //Returns the value of division with no errors
-}
 
 func methodMain() { //Main function
-	//Function to return variables
-	a := getNumbers() //Calls the function and store the returned value to 'a'
-	fmt.Println(a)
-}
 
-type Pigeon struct {
-	Name          string //public keyword - "Name" starting with an uppercase
-	featherLength int    //private keyword - "featherLength" starting with lowercase
-}
+		//Function to return variables
+		a := getNumbers() //Calls the function and store the returned value to 'a'
+		fmt.Println(a)
+	}
+
+	type Pigeon struct {
+		Name          string //public keyword - "Name" starting with an uppercase
+		featherLength int    //private keyword - "featherLength" starting with lowercase
+	}
 */
+package main
